@@ -1,13 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.spinner {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: conic-gradient(#0000 10%, #474bff);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
+  animation: spinner-zp9dbg 1s infinite linear;
+}
+
+@keyframes spinner-zp9dbg {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.css-1dc80h3-MuiTableCell-root {
+  text-align: center !important;
+  color: aliceblue !important;
+}
+.css-1orzuox-MuiTableCell-root {
+  color: aliceblue !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+}
+.css-1umw9bq-MuiSvgIcon-root {
+  color: aliceblue !important;
+}
+.css-ovbmre-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+  color: aliceblue !important;
+}
+.css-lohd6h-MuiSvgIcon-root-MuiSelect-icon {
+  color: aliceblue !important;
+}
+.css-ovbmre-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+  border: 1px solid white;
+}
+.css-195ypl5 {
+  color: white !important;
+}
+.css-1plsf6o {
+  color: white !important;
+}
+.css-mp9f0v {
+  color: white !important;
+}
+.css-14tdew7 {
+  border: 1px solid white !important;
+}
+.css-1l3b12y {
+  color: white !important;
+}
+.css-d771x4 {
+  color: white !important;
 }
